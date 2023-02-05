@@ -1,0 +1,177 @@
+[
+    {
+        "nombre_item": "Quad", 
+        "descripcion": "Quad", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/fda41a20cf6da224a47ea9e3e4f9ed47.png",
+        "categoria": "Vehículos"
+    },
+    {
+        "nombre_item": "Stafford", 
+        "descripcion": "Stafford", 
+        "precio_coins": 20, 
+        "url_img": "https://i.gyazo.com/afe36c106cbb5b36441357c53fcc1cdd.png",
+        "categoria": "Vehículos"
+    },
+    {
+        "nombre_item": "Dodo", 
+        "descripcion": "Dodo", 
+        "precio_coins": 60, 
+        "url_img": "https://i.gyazo.com/5f68414c817b194cda186352fb005dad.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Skimmer", 
+        "descripcion": "Skimmer", 
+        "precio_coins": 60, 
+        "url_img": "https://i.gyazo.com/334f1fe2a3da0ad1cc71a6b0c20d2ca7.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Hotdog", 
+        "descripcion": "Hotdog", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/e8b8d13a5aa3613f99c895e9239ca347.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Tropic", 
+        "descripcion": "Tropic", 
+        "precio_coins": 20, 
+        "url_img": "https://i.gyazo.com/9dec03585a418ca34731ef20eab2d907.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Reefer", 
+        "descripcion": "Reefer", 
+        "precio_coins": 20, 
+        "url_img": "https://i.gyazo.com/a63bf15ef96a7e832224257c18b93bba.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Jetmax", 
+        "descripcion": "Jetmax", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/87fdc4ec9be19a1778249ac116109492.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Bloodring Banger", 
+        "descripcion": "Bloodring Banger", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/9686ec2bdcb271f68aef8c2fa2da0c0a.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Motor Home", 
+        "descripcion": "Motor Home", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/a9146886e9d0a4e3362920da7bb2d84d.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Maverick", 
+        "descripcion": "Maverick", 
+        "precio_coins": 100, 
+        "url_img": "https://i.gyazo.com/18b0bbe3aa62fd2d73201e09de286201.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Shamal", 
+        "descripcion": "Shamal", 
+        "precio_coins": 110, 
+        "url_img": "https://i.gyazo.com/d7b0ad2b2899f2cafe7a773e0f0864b9.png",
+        "categoria": "Vehículos"
+    },
+    {
+        "nombre_item": "Camion de helados", 
+        "descripcion": "Camion de helados", 
+        "precio_coins": 30, 
+        "url_img": "https://i.gyazo.com/4ce920c3b865eb5994ade3e90fd8a4c4.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Limosina", 
+        "descripcion": "Limosina", 
+        "precio_coins": 40, 
+        "url_img": "https://i.gyazo.com/28ced30162566ed059e730b2c15e30a2.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Golf Car", 
+        "descripcion": "Golf Car", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/d3fbbb8c7a3db5481009b1384b254a44.png",
+        "categoria": "Vehículos"
+	},
+    {
+        "nombre_item": "Accesorios", 
+        "descripcion": "Accesorios", 
+        "precio_coins": 8, 
+        "url_img": "https://i.gyazo.com/e5db73045b0c7f5a556b01e3d1815979.png",
+        "categoria": "Accesorios"
+	},
+    {
+        "nombre_item": "Skins reservados", 
+        "descripcion": "Skins reservados", 
+        "precio_coins": 15, 
+        "url_img": "https://i.gyazo.com/7727175af3e3329909cef9de100f5076.png",
+        "categoria": "Skins"
+	},
+    {
+        "nombre_item": "Restaurantes y Bares", 
+        "descripcion": "Restaurantes", 
+        "precio_coins": 40, 
+        "url_img": "https://i.gyazo.com/e57abd81a783b0ebb89f2a877afdc903.jpg",
+        "categoria": "Negocios"
+	},
+    {
+        "nombre_item": "Tiendas de ropa", 
+        "descripcion": "Tiendas de ropa", 
+        "precio_coins": 40, 
+        "url_img": "https://i.gyazo.com/6d59d52f1a9a77d6d0ecf965a6b1079b.png",
+        "categoria": "Negocios"
+	},
+    {
+        "nombre_item": "Supermercados", 
+        "descripcion": "Supermercados", 
+        "precio_coins": 50, 
+        "url_img": "https://download.gtanet.com/gtagarage/files/image_63072.jpg",
+        "categoria": "Negocios"
+	},
+    {
+        "nombre_item": "Discotecas", 
+        "descripcion": "Discotecas", 
+        "precio_coins": 50, 
+        "url_img": "https://i.gyazo.com/ba567bd7c921e508531ef3bc9866651a.png",
+        "categoria": "Negocios"
+	},
+    {
+        "nombre_item": "Casas Comunes", 
+        "descripcion": "Casas Comunes", 
+        "precio_coins": 18, 
+        "url_img": "https://i.gyazo.com/493130734658feb18fcbec1619648916.png",
+        "categoria": "Propiedades"
+	},
+    {
+        "nombre_item": "Mansion Isla VIP", 
+        "descripcion": "Mansion Isla VIP", 
+        "precio_coins": 25, 
+        "url_img": "https://i.gyazo.com/39c8bfd4d2da20d2544c2e5b4eff4f80.png",
+        "categoria": "Propiedades"
+	},
+    {
+        "nombre_item": "Mansiones", 
+        "descripcion": "Mansiones", 
+        "precio_coins": 70, 
+        "url_img": "https://cs2.gamemodding.com/images/750x407/3ce800435b31b5bc4df318ff5d42dfdbf229579785d5067cb7572d85f855107a.jpg",
+        "categoria": "Propiedades"
+	},
+    {
+        "nombre_item": "Mansiones Grandes", 
+        "descripcion": "Mansiones Grandes", 
+        "precio_coins": 100, 
+        "url_img": "https://i.gyazo.com/298ce3f7d320d1f48c286a5679fb156d.png",
+        "categoria": "Propiedades"
+	}
+]

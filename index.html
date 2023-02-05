@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Catálogo</title>
+    
+    <!--Behavioral Meta Data  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Metadatos de posicionamiento -->
+	<meta name="author" content="Lautaro Zarate">
+	<meta name="description" content="Catálogo.">
+	<meta name="keywords" content="Catálogo">
+
+	<!-- Open Graph Meta Data -->
+	<meta property="og:description" content="Catálogo">
+	<meta property="og:image" content="ejemplo.png">
+	<meta property="og:url" content="https://ejemplo.com">
+	<meta property="og:site_name" content="Catálogo">
+	<meta property="og:title" content="Catálogo">
+	<meta property="og:type" content="website">
+	<!-- Humans -->
+	<link rel="author" href="./humans.txt" />
+	<!-- Twitter Card Meta Data -->
+	<meta name="twitter:description" content="Catálogo">
+	<meta name="twitter:image" content="ejemplo.png">
+	<meta name="twitter:site" content="https://ejemplo.com">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Catálogo">
+
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/catalogo.css">
+    <link rel="stylesheet" href="./assets/css/membresias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-comment"></i> Blog</a></li>
+            <li><a href="#" class="active"><i class="fa-solid fa-store"></i> Tienda</a></li>
+        </ul>
+    </header>
+    <section class="main">
+        <div class="bg-person">
+            <img src="./assets/img/person.png" alt="RENDER" id="render-bg">
+        </div>
+        <div class="bg-fx" id="bg-fx">
+            <img src="./assets/img/lineas.svg" alt="RENDER" data-depth="0.05">
+        </div>
+        <div class="main-wrapper">
+            <div class="left">
+                <div class="bg-left" id="pj">
+                    <img src="./assets/img/person.png" alt="RENDER" data-depth="-0.06">
+                </div>
+                <div class="items-donacion">
+                    <button class="ver-productos"  id="btn-ventana">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p><strong>Ver productos</strong></p>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="form-wrapper">
+                    <p class="title">Ingresar</p>
+                    <form>
+                        <p style="margin-top: 10px;">Ingrese con su nombre de usuario y contraseña del servidor.</p>
+                        <label class="icon-input">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <input type="text" placeholder="Introduzca su nombre de personaje" readonly disabled>
+                        </label>
+                        <label class="icon-input">
+                            <i class="fa-regular fa-keyboard"></i>
+                            <input type="password" placeholder="Introduzca la contraseña" readonly disabled>
+                        </label>
+                        <p style="margin-top: 5px;" class="adv">El login se encuentra temporalmente deshabilitado. No obstante, podrá ver los items a la venta en "Ver catálogo" y comprarlos a través de un ticket en nuestro discord.</p>
+                        <div class="buttons-login">
+                            <a href="">Olvidó su contraseña?</a>
+                            <button>Ingresar</button>
+                        </div>
+                    </form>
+                    <button class="btn bprimary" id="btn-ventana">
+                        <i class="fa-solid fa-tag"></i>
+                        Ver catálogo
+                    </button>
+                </div>
+                <div class="bottom-info">
+                    <h5>INFORMACIÓN</h5>
+                    <p>
+                        <br>
+                        TIPO DE CAMBIO 1 COIN = 1 USD
+                        <br><br>
+                        <div class="box-metodos-pago">
+                            <div class="box-metodo">
+                                <img src="./assets/img/rapipago.png" alt="RAPIPAGO">
+                            </div>
+                            <div class="box-metodo">
+                                <img src="./assets/img/PAGOFACIL.png" alt="PAGOFACIL">
+                            </div>
+                            <div class="box-metodo">
+                                <img src="./assets/img/PAYPAL.png" alt="PAYPAL">
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalogo" id="ventana">
+        <div class="catalogo_wrapper">
+
+
+            <div class="catalogo__header">
+                <div class="catalogo__navbar">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-comment"></i> Blog</a></li>
+                    </ul>
+                    <a href="#" id="btn-ventana"><i class="fa-solid fa-x"></i></a>
+                </div>
+                <div class="catalogo__img">
+                    <img src="./assets/img/prueba.jpg" class="bg-catalogo">
+                    <div class="objeto-mid">
+                        <div class="items-flotantes">
+                            <img src="./assets/img/billete.png" class="itemflotante flotante-izq" style="filter: blur(5px); margin-left: -300px; width: 200px; margin-top: 20px; z-index: 10;">
+                            <img src="./assets/img/pngegg.png" class="itemflotante flotante-der" style="margin-left: 350px; margin-top: 20px; width: 70px;">
+                            <img src="./assets/img/whisky.png" class="itemflotante flotante-der" style="margin-left: 800px; margin-top: 80px; width: 200px; ">
+                            <img src="./assets/img/habano.png" class="itemflotante flotante-izq" style="margin-left: -700px;margin-top: 10px; width: 120px;">
+                        </div>
+                        <img src="./assets/img/tiendavip.png" class="itemflotante" id="item-central" style="bottom: 0; width: 500px; z-index: 5; transition: 1s;">
+                    </div>
+                    <div class="catalogo__titulo">Catálogo PREMIUM</div>
+                </div>
+            </div>
+
+            <div class="catalogo__bottom">
+                <div class="catalogo__left">
+                    <div class="categorias">
+                        Categorias
+                    </div>
+
+                    <ul>
+                        <li id="filter-btn">Propiedades</li>
+                        <li id="filter-btn">Negocios</li>
+                        <li id="filter-btn">Vehículos</li>
+                        <li id="filter-btn">Accesorios</li>
+                        <li id="filter-btn">Skins</li>
+                    </ul>
+                    <div class="categoria cat__membresias" id="btn-ventana-membresia">
+                        <img src="./assets/img/diamante.png">
+                        <p>Membresías<br><span>¡Los mejores beneficios!</span></p>
+                    </div>
+                    <a class="categoria cat__ds" href="#" target="_blank" style="color: black;">
+                        <img src="./assets/img/discord.png" style="width: 25%; margin-left: 0px; margin-top: -2px;">
+                        <p>¡SOLICITA TU ITEM!<br><span>CREA UN TICKET EN DISCORD</span></p>
+                    </a>
+                </div>
+                <div class="catalogo__right">
+
+                    <div class="box-items-gral">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <div class="box-membresia" id="ventana-membresia">
+        <button id="btn-ventana-membresia"><i class="fa-solid fa-x"></i></button>
+        <div class="wrapper-membresia">
+
+            <div class="bg-fondo">
+                <img src="./assets/img/vg1.png">
+            </div>
+            
+            <div class="bg-gaussiano" style="background: #e3e62e"></div>
+
+            <div class="box-pj-fondo">
+                <img src="./assets/img/PD.png">
+            </div>
+
+            <div class="item item-right item-1">
+                <img src="./assets/img/pngegg.png">
+            </div>
+
+            <!-- DATA  -->
+            <div class="box-data-membresia">
+                <h4>Información</h4>
+                <p>Membresía válida por 30 días.</p>
+                <br />
+                <p>Beneficios VIP ORO</p>
+                <ul>
+                    <li>Pagas extras en todos los trabajos</li>
+                    <li>Dinero de regalo <span style="color: rgb(62, 255, 62);">$10.000</span></li>
+                    <li>Ingreso al Lounge VIP</li>
+                    <li>Menú especial de /membresia</li>
+                    <li>Dinero extra en PayDay</li>
+                    <li>+1 slot para casas y negocios</li>
+                    <li>+2 slots para vehículos</li>
+                    <li>Límite de accesorios: 4</li>
+                    <li>Límite de plantaciones: 3</li>
+                    <li>Regalos aleatorios</li>
+                    <li>Nombre dorado (IN-GAME)</li>
+                </ul>
+            </div>
+
+            <div class="item item-right item-2">
+                <img src="./assets/img/money.png" style="width: 50%;">
+            </div>
+
+            <div class="item item-left item-3">
+                <img src="./assets/img/billete.png" style="width: 25%;">
+            </div>
+
+            <div class="title-membresia">
+                <h1>VIP ORO <span style="background: #e3e62e">5 COINS</span></h1>
+            </div>
+        </div>
+
+        <div class="wrapper-membresia">
+            <div class="bg-fondo">
+                <img src="./assets/img/vg1.png">
+            </div>
+            
+            <div class="bg-gaussiano" style="background: #2ea2e6"></div>
+
+            <div class="box-pj-fondo">
+                <img src="./assets/img/PD2.png">
+            </div>
+
+            <div class="item item-right item-1">
+                <img src="./assets/img/pngegg.png">
+            </div>
+
+            <!-- DATA  -->
+            <div class="box-data-membresia">
+                <h4>Información</h4>
+                <p>Membresía válida por 30 días.</p>
+                <br />
+                <p>Beneficios VIP DIAMANTE</p>
+                <ul>
+                    <li>Pagas extras en todos los trabajos</li>
+                    <li>Dinero de regalo  <span style="color: rgb(62, 255, 62);">$20.000</span></li>
+                    <li>Rol de Diamond Donator en Discord</li>
+                    <li>Ingreso al Lounge VIP</li>
+                    <li>Menú especial de /membresia</li>
+                    <li>Dinero extra en PayDay</li>
+                    <li>+2 slot para casas y negocios</li>
+                    <li>+4 slots para vehículos</li>
+                    <li>Límite de accesorios: 6</li>
+                    <li>Límite de plantaciones: 4</li>
+                    <li>Regalos aleatorios</li>
+                    <li>Nombre dorado (IN-GAME)</li>
+                    <li>Contacto directo con el staff</li>
+                </ul>
+            </div>
+
+            <div class="item item-right item-2">
+                <img src="./assets/img/money.png" style="width: 50%;">
+            </div>
+
+            <div class="item item-left item-3">
+                <img src="./assets/img/billete.png" style="width: 25%;">
+            </div>
+
+            <div class="title-membresia">
+                <h1>VIP DIAMANTE <span style="background: #2ea2e6">10 COINS</span></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-terminos-condiciones" id="ventana-pago">
+        <div class="box-terminos">
+            <div class="box-img" style="width: 100%; display: flex; justify-content: center; margin-top: 2em;">
+                <img src="./assets/img/logo.png">
+            </div>
+            <div class="box-data-elementos-terminos">
+
+            </div>
+            <button onclick="handlePagos(true)">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/parallax.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

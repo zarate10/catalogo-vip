@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { 
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+body { 
+    background: #060c12;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.main { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+.bg-person { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+.bg-person img { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    transform: rotateY(180deg);
+}
+.bg-fx { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+}
+.bg-fx img { 
+    object-fit: cover;
+    height: 130%;
+    transform: rotateY(180deg);
+    margin-top: 10%;
+    margin-left: -5%;
+    transform: rotate(360deg);
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    padding: 0 6vw 0 6vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000000;
+    text-transform: uppercase;
+    display: none;
+
+}
+header ul { 
+    display: flex;
+    gap: 30px;
+}
+
+header ul li a { 
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.6vh;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 0.35s ease 0s;
+    display: flex;
+    align-items: center;
+}
+header ul li a i { 
+    font-size: 1.1em;
+    opacity: 0.4;
+    margin-right: 0.9vh;
+}
+header ul li a:hover{ 
+    color: white;
+    transition: 0.3s;
+}
+header .logo { 
+    width: 180px;
+}
+header .logo img { 
+    width: 100%;
+}
+.active { 
+    color: white;
+}
+.main-wrapper { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-wrapper .left { 
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+.main-wrapper .left .bg-left { 
+    width: 140%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: -25%;
+    top: 5%;
+}
+.main-wrapper .left .bg-left img { 
+    width: 100%;
+    margin-left: 100px;
+}
+.main-wrapper .left .items-donacion { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+}
+.main-wrapper .left .items-donacion .ver-productos {
+    height: 100px; 
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 20px;
+    color: wheat;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.ver-productos i { 
+    position: absolute;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: #28a745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.6em;
+    color: white;
+    transition: 0.3s;
+    
+}
+.ver-productos p {
+    padding: 15px 20px 15px 45px;
+    background: #28a745;
+    margin-left: 15px;
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s;
+}
+.ver-productos:hover > p { 
+    box-shadow: 0px 0px 15px #28a745;
+    transition: 0.5s;
+}
+.ver-productos:hover > i {
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+.main-wrapper .left .items-donacion .ver-productos > img { 
+    transition: 0.3s;
+}
+.main-wrapper .left .items-donacion .ver-productos:hover > img { 
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.main-wrapper .left .items-donacion .ver-productos div { 
+    background: #25a1ff; 
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 0.7em;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.main-wrapper .right { 
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    position: relative;
+}
+.main-wrapper .right .form-wrapper { 
+    max-width: 550px;
+    width: 100%;
+    max-height: 700px;
+    height: 85vh;
+    background: #0c141c;
+    padding: 2em;
+    
+}
+.main-wrapper .right .form-wrapper .title { 
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+.main-wrapper .right .form-wrapper form { 
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main-wrapper .right .form-wrapper form p { 
+    color: #ffffffbf;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 100;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.main-wrapper .right .form-wrapper form div.metodo { 
+    min-height: 4.5vh;
+    max-height: 4.5vh;
+    padding: 2vh;
+    display: flex;
+    border: 2px dashed rgba(179, 179, 179, 0.098);
+    align-items: center;
+    margin-top: 3vh;
+    cursor: pointer;
+    color: rgba(179, 179, 179, 0.492);
+    transition: 0.3s;
+}
+.main-wrapper .right .form-wrapper form .metodo:hover { 
+    color: white;
+    background: rgba(255, 255, 255, 0.03);
+    transition: 0.3s;
+}
+.main-wrapper .right .form-wrapper form .icon-input { 
+    display: flex;
+    align-items: center;
+}
+.main-wrapper .right .form-wrapper form .icon-input i { 
+    width: 50px;
+    min-height: 4.7vh;
+    max-height: 4.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: aqua;
+    font-size: 1em;
+    cursor: pointer;
+}
+.main-wrapper .right .form-wrapper form .icon-input input { 
+    min-height: 4.7vh;
+    max-height: 4.7vh;
+    font-size: 0.9em;
+    width: 100%;
+    padding: 2vh 0 2vh 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.778);
+    border: none;
+    align-items: center;
+    color: rgba(179, 179, 179, 0.492);
+    transition: 0.3s;
+}
+.main-wrapper .right .form-wrapper form .icon-input input:focus { 
+    outline: none;
+}
+.main-wrapper .right .form-wrapper form .icon-input > button {
+    min-height: 4.7vh;
+    max-height: 4.7vh;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    cursor:pointer;
+    padding: 2vh 0 2vh 0;
+    background: #1f2425;
+    color: gray;
+    font-size: 1.5vh;
+    transition: 0.3s;
+}
+.main-wrapper .right .form-wrapper form .icon-input .fa-credit-card { 
+    color: gray;background: #1f2425;
+    transition: 0.3s;
+}
+.main-wrapper .right .form-wrapper form .icon-input:hover > .fa-credit-card,
+.main-wrapper .right .form-wrapper form .icon-input:hover > button { 
+    background: aqua;
+    color: black;
+    transition: 0.3s;
+}
+.main-wrapper .right .bottom-info { 
+    max-width: 550px;
+    width: 100%;
+    height: 25vh;
+    background: rgba(0, 0, 0, 0.139);
+    position: absolute;
+    padding: 2em;
+}
+.main-wrapper .right .bottom-info p {
+    font-size: 1.5vh;
+    color: #ffffff9f;
+}
+#render-bg{ 
+    filter: blur(5px);
+}
+.buttons-login { 
+    font-size: 0.9em;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons-login a{ 
+    color: white;
+}
+.buttons-login button { 
+    font-size: 1em;
+    padding: 8px 30px;
+    border: none;
+    color: gray;
+    background: rgb(27, 32, 40);
+}
+.adv { 
+    color: honeydew; 
+    font-weight:400; 
+    padding: 15px; 
+    background: rgba(0, 0, 0, 0.139);
+}
+.box-metodos-pago { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.box-metodos-pago .box-metodo { 
+    width: 140px;
+    height: 65px;
+    background: #ffffff06;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-metodos-pago .box-metodo img {
+    width: 60%;
+}
+/* -------------- BTNS-------------- */
+.btn { 
+    width: 100%;
+    border: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn i { 
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+.bprimary { 
+    background: aqua;
+}
+.bprimary:hover { 
+    transition: 1s;
+    animation: primaryhover 3s infinite;
+}
+
+@keyframes primaryhover {
+    0% { 
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.159);
+        color: black;
+    }
+    50% { 
+        background: rgb(67, 249, 252);
+        box-shadow: 0 0 40px rgba(55, 230, 198, 0.159);
+        color: black;
+    }
+    100% { 
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.159);
+        color: black;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-wrapper .left { 
+        display: none;
+        height: 100%;
+        position: relative;
+    }
+    .main-wrapper .right { 
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
+    header { 
+        justify-content: center;
+    }
+    header ul { 
+        display: none;
+    }
+}
+
+.modal-terminos-condiciones { 
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.824);
+}
+.modal-terminos-condiciones .box-terminos { 
+    max-width: 500px;
+
+    background: white;
+    width: 100%;
+    position: relative;
+}
+.modal-terminos-condiciones .box-terminos button { 
+    width: 100%;
+    padding: 10px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: #0f2135;
+    color: white;
+    text-transform: uppercase;
+}
+.modal-terminos-condiciones .box-terminos .data {
+     width: 100%;
+     padding: 2rem 2rem 4rem 2rem;
+     color: black;
+}
+.modal-terminos-condiciones .box-terminos .data p {
+    font-size: 0.8em;
+}
+.modal-terminos-condiciones .box-terminos .terminos { 
+    margin-top: 10px;
+    font-size: 0.75em;
+    padding: 10px;
+    background: rgb(211, 211, 211);
+}
